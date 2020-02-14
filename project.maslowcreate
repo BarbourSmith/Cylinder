@@ -13,7 +13,7 @@
                 },
                 {
                     "name": "Height",
-                    "ioValue": 10
+                    "ioValue": 100
                 }
             ],
             "topLevel": true,
@@ -37,11 +37,20 @@
                 {
                     "atomType": "Code",
                     "name": "Code",
-                    "x": 430,
-                    "y": 160,
+                    "x": 617,
+                    "y": 102,
                     "uniqueID": 458913,
-                    "ioValues": [],
-                    "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(Width, Height){\n  return Cylinder(Width,Height);        //return must be geometry;\n}\n\nreturn main(Width, Height)"
+                    "ioValues": [
+                        {
+                            "name": "Width",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Height",
+                            "ioValue": 100
+                        }
+                    ],
+                    "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(Width, Height){\n  return Cylinder(Width,Height).move(0,0,Height/2);        //return must be geometry;\n}\n\nreturn main(Width, Height)"
                 },
                 {
                     "atomType": "Output",
@@ -51,7 +60,28 @@
                     "ioValues": []
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Width",
+                    "ap2Primary": false,
+                    "ap1ID": 259221,
+                    "ap2ID": 458913
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Height",
+                    "ap2Primary": false,
+                    "ap1ID": 939335,
+                    "ap2ID": 458913
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 458913
+                }
+            ],
             "fileTypeVersion": 1
         }
     ],
