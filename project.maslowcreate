@@ -9,7 +9,7 @@
             "ioValues": [
                 {
                     "name": "Width",
-                    "ioValue": 10
+                    "ioValue": 30
                 },
                 {
                     "name": "Height",
@@ -43,7 +43,7 @@
                     "ioValues": [
                         {
                             "name": "Width",
-                            "ioValue": 10
+                            "ioValue": 30
                         },
                         {
                             "name": "Height",
