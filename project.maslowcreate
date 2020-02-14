@@ -50,7 +50,7 @@
                             "ioValue": 100
                         }
                     ],
-                    "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(Width, Height){\n  return Cylinder(Width,Height).move(0,0,Height/2);        //return must be geometry;\n}\n\nreturn main(Width, Height)"
+                    "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(Width, Height){\n  return Cylinder(Width/2,Height).move(0,0,Height/2);        //return must be geometry;\n}\n\nreturn main(Width, Height)"
                 },
                 {
                     "atomType": "Output",
