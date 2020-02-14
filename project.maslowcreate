@@ -6,9 +6,43 @@
             "x": 0,
             "y": 0,
             "uniqueID": 150399,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "Width",
+                    "ioValue": 10
+                },
+                {
+                    "name": "Height",
+                    "ioValue": 10
+                }
+            ],
             "topLevel": true,
             "allAtoms": [
+                {
+                    "atomType": "Input",
+                    "name": "Width",
+                    "x": 30,
+                    "y": 137,
+                    "uniqueID": 259221,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Height",
+                    "x": 30,
+                    "y": 198,
+                    "uniqueID": 939335,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Code",
+                    "name": "Code",
+                    "x": 430,
+                    "y": 160,
+                    "uniqueID": 458913,
+                    "ioValues": [],
+                    "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(Width, Height){\n  return Cylinder(Width,Height);        //return must be geometry;\n}\n\nreturn main(Width, Height)"
+                },
                 {
                     "atomType": "Output",
                     "name": "Output",
